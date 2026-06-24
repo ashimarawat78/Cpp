@@ -31,7 +31,7 @@ return -1;
 }
 int Rotated(int arr[], int size, int key){
     int pivot= Pivot(arr, size);
-    if(arr[pivot]<=key&&key<=size-1){
+    if(arr[pivot]<=key&&key<=arr[size-1]){
         return BinarySearch(arr,pivot,size-1, key);
     }else{
         return BinarySearch(arr,0,pivot-1,key);
