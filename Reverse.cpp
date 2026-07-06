@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+void Reverse(int arr[], int n){
+    int i=0;
+    for(int i=n-1; i>=0; i --){
+        cout<< arr[i];
+            }
+ 
+}
+int main (){
+    int arr[5]={ 1,2,3,4,5};
+    int n=5;
+    Reverse(arr, n);
+    
+    return 0;
+}
